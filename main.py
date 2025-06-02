@@ -9,12 +9,12 @@ window.configure(bg='#1C1C1C')
 calc = Frame(window, padx=10, pady=10, bg='#1C1C1C').pack()
 
 
-Text(calc, 
-      height=5, 
+Entry(calc, 
+      width=500, 
       font=('Arial', 30),
       fg="#ffffff", 
       bg="#1C1C1C",
-      
+      justify=RIGHT
       
       ).pack()
 numgrid = Frame(calc, padx=10, pady=10, bg='#1C1C1C').pack()
