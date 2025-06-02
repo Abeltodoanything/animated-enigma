@@ -17,6 +17,7 @@ Entry(calc,
       justify=RIGHT
       
       ).pack()
+numgrid = Frame(calc, padx=10, pady=10, bg='#1C1C1C').pack()
 
 # =AUTOCLICKER========================================================================= #
 
