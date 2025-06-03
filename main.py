@@ -11,8 +11,10 @@ font1 = 'Helvetica'
 
 # =CANVAS QUIZ BOT========================================================================= #
 def print_info():
-    getinfo = userentry0, userentry1, userentry2.get()
-    print(getinfo)
+    getinfo0 = userentry0.get()
+    getinfo1 = userentry1.get()
+    getinfo2 = userentry2.get()
+    print(f"Your username is  {getinfo0}\nYour password is  {getinfo1}\nThe Link is  {getinfo2}")
 
 # Title
 ctk.CTkLabel(window, 
