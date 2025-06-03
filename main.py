@@ -41,8 +41,8 @@ customtkinter.CTkEntry(window,
       font=(font1, 15)).pack()
 
 customtkinter.CTkButton(window, 
-       text="Start", 
-       width=20
+       text="Start",
+       width=100
        ).pack(pady=25)
 
 customtkinter.CTkTextbox(window, 
