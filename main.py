@@ -1,70 +1,58 @@
-from tkinter import *
+import customtkinter
 
-window = Tk()
+window = customtkinter.CTk()
 window.title("ANIMATED-ENIGMA")
 window.geometry("500x700")
-window.configure(bg='#1C1C1C')
+customtkinter.set_appearance_mode('dark')
+customtkinter.set_default_color_theme('theme.json')
 
 font1 = 'Helvetica'
 
 # =CANVAS QUIZ BOT========================================================================= #
 
 
-
-cqb = Frame(window, bg='#1C1C1C').pack()
-
 # Title
-Label(cqb, 
+customtkinter.CTkLabel(window, 
       width=500,
       text="Canvas quiz bot",
-      font=(font1, 15),
-      fg="#ffffff",
-      bg="#1C1C1C",
-      
-      
+      font=(font1, 25, 'bold'),
       ).pack()
 # INFO
-cqbinfo = Frame(window, bg='#1C1C1C').pack()
-Label(cqbinfo, 
+customtkinter.CTkLabel(window, 
       text="Username:", 
-      font=(font1, 11, 'bold'),
-      fg='#ffffff',
-      bg='#1C1C1C'
+      font=(font1, 15),
       ).pack(pady=5)
-Entry(cqbinfo, 
-      width=20,
+customtkinter.CTkEntry(window, 
       font=(font1, 15)).pack()
 
-Label(cqbinfo, 
+customtkinter.CTkLabel(window, 
       text="Password:", 
-      font=(font1, 11, 'bold'),
-      fg='#ffffff',
-      bg='#1C1C1C'
+      font=(font1, 15),
       ).pack(pady=5)
-Entry(cqbinfo, 
-      width=20,
+customtkinter.CTkEntry(window, 
       font=(font1, 15),
       show='*').pack()
 
-Label(cqbinfo, 
+customtkinter.CTkLabel(window, 
       text="Canvas quiz link:", 
-      font=(font1, 11, 'bold'),
-      fg='#ffffff',
-      bg='#1C1C1C'
+      font=(font1, 15),
       ).pack(pady=5)
-Entry(cqbinfo, 
-      width=20,
+customtkinter.CTkEntry(window, 
       font=(font1, 15)).pack()
 
-Button(cqbinfo, 
+customtkinter.CTkButton(window, 
        text="Start", 
-       width=20
+       corner_radius=10
        ).pack(pady=25)
 
-Text(cqbinfo, 
-     width=40,
-     height=15,
-     font='Monaco'
+customtkinter.CTkTextbox(window, 
+     width=400,
+     height=200,
+     border_width=2,
+     corner_radius=10,
+     border_color='#505050',
+     font=('Monaco', 12),
+     activate_scrollbars=True, 
      ).pack()
 # =AUTOCLICKER========================================================================= #
 
