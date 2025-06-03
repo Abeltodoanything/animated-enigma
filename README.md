@@ -1,1 +1,22 @@
 # animated-enigma
+
+## 📦 Installation Guide
+
+Follow these steps to set up the project locally.
+
+### 1. Clone the Repository
+
+To get started, clone the repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/Abeltodoanything/animated-enigma.git 
+```
+Then navigate into the project directory:
+
+#### 2. Install Dependencies
+This project uses Python and requires the dependencies listed in requirements.txt. Install them using pip:
+
+```bash
+pip install -r requirements.txt
+```
+
