@@ -1,4 +1,3 @@
-import tkinter
 import customtkinter as ctk
 
 window = ctk.CTk()
@@ -12,7 +11,7 @@ font1 = 'Helvetica'
 
 # =CANVAS QUIZ BOT========================================================================= #
 def print_info():
-    getinfo = userentry0.get()
+    getinfo = userentry0, userentry1, userentry2.get()
     print(getinfo)
 
 # Title
@@ -28,7 +27,8 @@ ctk.CTkLabel(window,
       ).pack(pady=5)
 userentry0 = ctk.CTkEntry(window, 
       font=(font1, 15),
-      ).pack()
+      )
+userentry0.pack()
 
 ctk.CTkLabel(window, 
       text="Password:", 
@@ -36,14 +36,16 @@ ctk.CTkLabel(window,
       ).pack(pady=5)
 userentry1 = ctk.CTkEntry(window, 
       font=(font1, 15),
-      show='*').pack()
+      show='*')
+userentry1.pack()
 
 ctk.CTkLabel(window, 
       text="Canvas quiz link:", 
       font=(font1, 15),
       ).pack(pady=5)
 userentry2 = ctk.CTkEntry(window, 
-      font=(font1, 15)).pack()
+      font=(font1, 15))
+userentry2.pack()
 
 ctk.CTkButton(window, 
        text="Start",
