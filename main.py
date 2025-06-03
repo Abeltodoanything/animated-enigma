@@ -11,10 +11,10 @@ ctk.set_default_color_theme('theme.json')
 font1 = 'Helvetica'
 
 # =CANVAS QUIZ BOT========================================================================= #
+def print_info():
+    getinfo = userentry0.get()
+    print(getinfo)
 
-def userpaslink():
-    entry1 = userentry0.get()
-    print(entry1)
 # Title
 ctk.CTkLabel(window, 
       width=500,
@@ -48,7 +48,7 @@ userentry2 = ctk.CTkEntry(window,
 ctk.CTkButton(window, 
        text="Start",
        width=100,
-       command=userpaslink
+       command=print_info
        ).pack(pady=25)
 
 ctk.CTkTextbox(window, 
@@ -57,6 +57,7 @@ ctk.CTkTextbox(window,
      font=('Monaco', 12),
      activate_scrollbars=True, 
      ).pack()
+
 # =AUTOCLICKER========================================================================= #
 
 # =CALCULATOR========================================================================= #
