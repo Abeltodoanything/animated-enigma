@@ -42,7 +42,7 @@ customtkinter.CTkEntry(window,
 
 customtkinter.CTkButton(window, 
        text="Start", 
-       corner_radius=10
+       width=20
        ).pack(pady=25)
 
 customtkinter.CTkTextbox(window, 
