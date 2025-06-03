@@ -24,3 +24,8 @@ This project uses Python and requires the dependencies listed in requirements.tx
 pip install -r requirements.txt
 ```
 
+##### 3. Install playwright
+
+```bash
+playwright install
+```
