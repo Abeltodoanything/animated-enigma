@@ -13,6 +13,10 @@ git clone https://github.com/Abeltodoanything/animated-enigma.git
 ```
 Then navigate into the project directory:
 
+```bash
+cd animated-enigma
+```
+
 #### 2. Install Dependencies
 This project uses Python and requires the dependencies listed in requirements.txt. Install them using pip:
 
