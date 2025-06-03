@@ -1,51 +1,57 @@
-import customtkinter
+import tkinter
+import customtkinter as ctk
 
-window = customtkinter.CTk()
+window = ctk.CTk()
 window.title("ANIMATED-ENIGMA")
+window.iconbitmap('icon.png')
 window.geometry("500x700")
-customtkinter.set_appearance_mode('dark')
-customtkinter.set_default_color_theme('theme.json')
+ctk.set_appearance_mode('dark')
+ctk.set_default_color_theme('theme.json')
 
 font1 = 'Helvetica'
 
 # =CANVAS QUIZ BOT========================================================================= #
 
-
+def userpaslink():
+    entry1 = userentry0.get()
+    print(entry1)
 # Title
-customtkinter.CTkLabel(window, 
+ctk.CTkLabel(window, 
       width=500,
       text="Canvas quiz bot",
       font=(font1, 25, 'bold'),
       ).pack()
 # INFO
-customtkinter.CTkLabel(window, 
+ctk.CTkLabel(window, 
       text="Username:", 
       font=(font1, 15),
       ).pack(pady=5)
-customtkinter.CTkEntry(window, 
-      font=(font1, 15)).pack()
+userentry0 = ctk.CTkEntry(window, 
+      font=(font1, 15),
+      ).pack()
 
-customtkinter.CTkLabel(window, 
+ctk.CTkLabel(window, 
       text="Password:", 
       font=(font1, 15),
       ).pack(pady=5)
-customtkinter.CTkEntry(window, 
+userentry1 = ctk.CTkEntry(window, 
       font=(font1, 15),
       show='*').pack()
 
-customtkinter.CTkLabel(window, 
+ctk.CTkLabel(window, 
       text="Canvas quiz link:", 
       font=(font1, 15),
       ).pack(pady=5)
-customtkinter.CTkEntry(window, 
+userentry2 = ctk.CTkEntry(window, 
       font=(font1, 15)).pack()
 
-customtkinter.CTkButton(window, 
+ctk.CTkButton(window, 
        text="Start",
-       width=100
+       width=100,
+       command=userpaslink
        ).pack(pady=25)
 
-customtkinter.CTkTextbox(window, 
+ctk.CTkTextbox(window, 
      width=400,
      height=200,
      font=('Monaco', 12),
