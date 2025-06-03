@@ -12,7 +12,7 @@ calc = Frame(window, padx=10, pady=10, bg='#1C1C1C').pack()
 Label(calc, 
       width=500,
       text="Canvas quiz bot",
-      font=('Arial', 30),
+      font=('Arial', 15),
       fg="#ffffff", 
       bg="#1C1C1C",
       
