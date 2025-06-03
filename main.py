@@ -58,7 +58,8 @@ Entry(cqbinfo,
 
 Button(cqbinfo, 
        text="Start", 
-       width=20
+       width=20,
+       bg='gray'
        ).pack(pady=25)
 
 Text(cqbinfo, 
