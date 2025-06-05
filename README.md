@@ -25,7 +25,3 @@ pip install -r requirements.txt
 ```
 
 ##### 3. Install playwright
-
-```bash
-playwright install
-```
