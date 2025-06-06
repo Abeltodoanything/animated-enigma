@@ -1,4 +1,4 @@
-# animated-enigma
+# C.Q.B.v2
 
 ## 📦 Installation Guide
 
