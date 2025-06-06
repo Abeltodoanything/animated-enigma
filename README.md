@@ -14,7 +14,7 @@ git clone https://github.com/Abeltodoanything/cqbv2.git
 Then navigate into the project directory:
 
 ```bash
-cd animated-enigma
+cd cqbv2
 ```
 
 #### 2. Install Dependencies
