@@ -1,4 +1,2 @@
 customtkinter
-dotenv
-playwright
-openai
+ttkbootstrap
