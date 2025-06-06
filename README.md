@@ -9,7 +9,7 @@ Follow these steps to set up the project locally.
 To get started, clone the repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/Abeltodoanything/animated-enigma.git 
+git clone https://github.com/Abeltodoanything/cqbv2.git 
 ```
 Then navigate into the project directory:
 
