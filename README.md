@@ -70,3 +70,16 @@ On Windows:
 ```bash
 python main.py
 ```
+🔄 Running the App Inside the Virtual Environment
+Note: If you chose to use a virtual environment, make sure it is activated every time you run the application.
+
+✅ To activate it:
+macOS/Linux:
+```bash
+source venv/bin/activate
+```
+Windows:
+```bash
+venv\Scripts\activate
+```
+You’ll know it’s active when you see (venv) at the beginning of your terminal prompt. If you don’t activate the venv, Python may use the wrong version or miss required packages.
